@@ -2,6 +2,7 @@ load("~/Dropbox/Papers/CU1.1/CU11 R project/whole data/whole.cu1.2.0.Rdata")
 
 #-----------------------------------------------R E G R E S S I O N   B R E A S T --------------------------------------------------
 # ================================= HYS  variation in each of colour, saturation and brightness of specimens is due to the geography of the current taxonomic grouping of orientalis and arquata  (not age, season, time of collection) =================================
+# test
 library(leaps)
 allSubsetsBreastH <- regsubsets(BREASTH ~ ORICOLL + AGECOLL + AGECURR + MTHCOLL + SEX, data=whole, nbest=5)
 plot (allSubsetsBreastH, scale='adjr2')
